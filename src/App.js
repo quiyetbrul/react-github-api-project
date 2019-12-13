@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 import Search from './components/Search';
 import User from './components/User';
+// import PublicRepos from './components/repos';
 
 const App = () => {
     return (
@@ -12,7 +13,7 @@ const App = () => {
             <main className="main-content">
                 <Switch>
                     <Route exact path="/" component={Search} />
-                    <Route path="/user/:username" component={User} />
+                    <Route path="/user/:username" component={User} />                    
                 </Switch>
             </main>
         </div>
