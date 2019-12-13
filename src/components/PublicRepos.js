@@ -20,8 +20,10 @@ const PublicRepos = props => {
   ) : (
     <div className="following-page">
       <h2>{props.match.params.username} Repos:</h2>
-      {repos.map(value => (
-        <GitHubRepo user={value} />
+      {repos.map(user => (
+          
+        <GitHubRepo user={user} />
+       
       ))}
    
       
